@@ -22,15 +22,15 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/bakhvalov4/test_daily_planner_backend
-   cd backend```
+   cd backend
 
 2. Создайте и активируйте виртуальное окружение:
    ```python -m venv venv
    source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows```
+   venv\Scripts\activate     # Windows
 
 3. Установите зависимости
-   ```pip install -r requirements.txt```
+   ```pip install -r requirements.txt
 
 4. Настройте базу данных PostgreSQL, создайте базу данных как в settings.py и создайте пользователя с паролем, как в settings.py
 
