@@ -20,15 +20,18 @@
 
 ## **Установка и запуск локально**
 1. Клонируйте репозиторий:
-   ```bash
+   ```
+   bash
    git clone https://github.com/bakhvalov4/test_daily_planner_backend
    cd backend
+   ```
 
 2. Создайте и активируйте виртуальное окружение:
    ```
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
    venv\Scripts\activate     # Windows
+   ```
 
 3. Установите зависимости
    ```
@@ -39,35 +42,45 @@
 5. Выполните миграции
    ```
    python manage.py migrate
+   ```
 
 6. Запустите сервер 
    ```
    python manage.py runserver
+   ```
 
 
 ## **Работа с API**
 
 - Получить список задач
-   `GET
+   ```
+   GET
    /api/daily/
+   ```
 
 - Создать новую задачу
-   ```POST
+   ```
+   POST
    /api/daily/
+   ```
+
 - Тело запроса (JSON):
    ```{
      "title": "Купить продукты",
      "description": "Молоко, хлеб, яйца"
       }
+   ```
 
 - Отметить задачу как выполненную/невыполненную
    ```POST
    /api/daily/{id}/worked_out/{id}
+   ```
 
 - Редактировать задачу
    ```PUT
    /api/daily/{id}/
-    ```
+   ```
 - Удалить задачу
    ```DELETE
    /api/daily/{id}/
+   ```
