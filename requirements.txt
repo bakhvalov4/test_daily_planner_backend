@@ -1,0 +1,3 @@
+DJANGO
+psycopg2-binary
+djangorestframework
