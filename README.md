@@ -22,6 +22,7 @@
 1. Клонируйте репозиторий:
    ```
    bash
+
    git clone https://github.com/bakhvalov4/test_daily_planner_backend
    cd backend
    ```
@@ -55,32 +56,41 @@
 - Получить список задач
    ```
    GET
+
    /api/daily/
    ```
 
 - Создать новую задачу
    ```
    POST
+
    /api/daily/
    ```
 
 - Тело запроса (JSON):
-   ```{
+   ```
+   {
      "title": "Купить продукты",
      "description": "Молоко, хлеб, яйца"
-      }
+   }
    ```
 
 - Отметить задачу как выполненную/невыполненную
-   ```POST
+   ```
+   POST
+
    /api/daily/{id}/worked_out/{id}
    ```
 
 - Редактировать задачу
-   ```PUT
+   ```
+   PUT
+
    /api/daily/{id}/
    ```
 - Удалить задачу
-   ```DELETE
+   ```
+   DELETE
+
    /api/daily/{id}/
    ```
