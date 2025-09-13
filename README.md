@@ -31,42 +31,42 @@
 
 3. Установите зависимости
    ```
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
 
 4. Настройте базу данных PostgreSQL, создайте базу данных как в settings.py и создайте пользователя с паролем, как в settings.py
 
 5. Выполните миграции
    ```
-   python manage.py migrate```
+   python manage.py migrate
 
 6. Запустите сервер 
    ```
-   python manage.py runserver```
+   python manage.py runserver
 
 
 ## **Работа с API**
 
-Получить список задач
+- Получить список задач
    ```GET
    /api/daily/
 
-Создать новую задачу
+- Создать новую задачу
    ```POST
    /api/daily/
-Тело запроса (JSON):
+- Тело запроса (JSON):
    ```{
      "title": "Купить продукты",
      "description": "Молоко, хлеб, яйца"
       }
 
-Отметить задачу как выполненную/невыполненную
+- Отметить задачу как выполненную/невыполненную
    ```POST
    /api/daily/{id}/worked_out/{id}
 
-Редактировать задачу
+- Редактировать задачу
    ```PUT
    /api/daily/{id}/
-
-Удалить задачу
+    ```
+- Удалить задачу
    ```DELETE
    /api/daily/{id}/
