@@ -25,7 +25,8 @@
    cd backend
 
 2. Создайте и активируйте виртуальное окружение:
-   ```python -m venv venv
+   ```
+   python -m venv venv
    source venv/bin/activate  # Linux/Mac
    venv\Scripts\activate     # Windows
 
@@ -47,7 +48,7 @@
 ## **Работа с API**
 
 - Получить список задач
-   ```GET
+   `GET
    /api/daily/
 
 - Создать новую задачу
